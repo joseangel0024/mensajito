@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(..//images/escuela_noche.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+form{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 80px 50px;
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+h1{
+    font-size: 25px;
+    line-height: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.input-container{
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-container > i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background: linear-gradient(135deg,#66cde7, #3552cf);
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.input-container > input{
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    background-color: transparent;
+    border: 2px solid #3552cf;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    transition: 0.3s ease;
+}
+.input-container > textarea{
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    background-color: transparent;
+    border: 2px solid #3552cf;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    transition: 0.3s ease;
+}
+::placeholder{
+    color: #bac5dd;
+    font-size: 16px;
+}
+.input-container > input:focus{
+    border-color: rgb(127, 208, 255);
+}
+.input-container > textarea:focus{
+    border-color: rgb(127, 208, 255);
+}
+form a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 25px;
+    display: block;
+}
+.btn{
+    background: linear-gradient(135deg,#66cde7, #3552cf);
+    padding: 14px 35px;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+.btn:hover{
+    background: linear-gradient(135deg,#3552cf, #66cde7);
+}
+@media (max-width:991px){
+    body{
+        padding: 20px;
+    }
+    form{
+        width: 100%;
+        padding: 40px;
+    }
+}
